@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+body {
+  background-color: #8cc461;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: end;
+}
+
+.justify-start {
+  justify-content: start;
+}
+
+.mx-auto {
+  margin: auto;
+}
+
+.mx-1{
+    margin: auto 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded-md {
+  border-radius: 12px;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.circle {
+  background-color: white;
+  margin: 1rem;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-radius: 100%;
+  box-shadow: inset 0 0 10px #f8a100;
+  cursor: pointer;
+}
+
+.circleh:hover {
+  box-shadow: #0074b6 0 0 100px;
+}
+
+.win {
+  box-shadow: 0px 0px 0px 15px rgba(46, 154, 37, 1),
+    0px 0px 0px 30px rgba(46, 154, 37, 0.85),
+    0px 0px 0px 45px rgba(46, 154, 37, 0.55),
+    0px 0px 0px 60px rgba(46, 154, 37, 0.25);
+  animation: pulse 3s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0px 0px 0px 15px rgba(46, 154, 37, 1),
+      0px 0px 0px 30px rgba(46, 154, 37, 0.85),
+      0px 0px 0px 45px rgba(46, 154, 37, 0.55),
+      0px 0px 0px 60px rgba(46, 154, 37, 0.25);
+  }
+
+  50% {
+    box-shadow: none;
+  }
+
+  100% {
+    box-shadow: 0px 0px 0px 15px rgba(46, 154, 37, 1),
+      0px 0px 0px 30px rgba(46, 154, 37, 0.85),
+      0px 0px 0px 45px rgba(46, 154, 37, 0.55),
+      0px 0px 0px 60px rgba(46, 154, 37, 0.25);
+  }
+}
+
+.points {
+  background-color: white;
+  color: #252525;
+  width: 220px;
+  height: 220px;
+  margin: auto 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.t-15 {
+  position: relative;
+  top: 15rem;
+}
+
+.l-2 {
+  position: relative;
+  left: 2rem;
+}
+
+.r-2 {
+  position: relative;
+  right: 2rem;
+}
+
+.lines {
+  position: relative;
+}
+
+.line {
+  background-color: #252525;
+  width: 18rem;
+  height: 1rem;
+  position: absolute;
+  z-index: -1;
+}
+
+.line1 {
+  left: 42%;
+  top: 47%;
+}
+
+.line2 {
+  left: 37%;
+  top: 57%;
+  transform: rotate(60deg);
+}
+
+.line3 {
+  left: 47%;
+  top: 57%;
+  transform: rotate(-60deg);
+}
+
+.points h2 {
+  color: #656565;
+  letter-spacing: 1.5px;
+}
+
+.points h1 {
+  font-size: 5rem;
+  margin-top: 0;
+}
+
+.title h1 {
+  font-size: 4rem;
+  margin: auto;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+.score-div {
+  border: 2px solid white;
+  padding: 1rem;
+  margin: 5rem auto;
+}
+
+.border-yellow {
+  border: #ffa943 16px solid;
+}
+
+.border-blue {
+  border: #0074b6 16px solid;
+}
+
+.border-purple {
+  border: #bd00ff 16px solid;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.bottom-5 {
+  bottom: 5rem;
+}
+
+.right-5 {
+  right: 5rem;
+}
+
+.btn {
+  border-radius: 8px;
+  border: solid 2px white;
+  padding: 0.6rem 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: #8cc461;
+  opacity: 90%;
+}
+
+/* This is the game rules section */
+
+.game-rules {
+  background-color: #004429;
+  width: 25rem;
+  padding: 1rem;
+  border: solid white 8px;
+  position: absolute;
+  bottom: 10rem;
+  right: 2rem;
+}
+
+.game-rule-title {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 10px;
+  line-height: 1.2em;
+  list-style-position: outside;
+  font-size: 1.3rem;
+}
+
+ul li::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellow;
+  margin-right: 10px;
+}
+
+.cross {
+  font-family: "Dangrek", cursive;
+  background-color: rgb(205, 0, 0);
+  width: 5rem;
+  height: 5rem;
+  border: white solid 8px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 22.5rem;
+  bottom: 4rem;
+  cursor: pointer;
+}
+
+.x {
+  font-size: 4rem;
+  position: relative;
+  bottom: 22%;
+  user-select: none;
+}
+
+.cross:hover {
+  background-color: red;
+}
+
+/* win/lose page */
+
+.result {
+  margin: 12rem auto;
+}
+
+.win-lose {
+  margin: auto 10rem;
+}
+
+.win-lose h1 {
+  font-size: 2.7rem;
+  letter-spacing: 3px;
+  line-height: 0;
+}
+
+.win-lose {
+  font-size: 1rem;
+  letter-spacing: 3px;
+}
+
+.win-lose .btn {
+  margin-top: 4rem;
+  background-color: white;
+  color: #8cc461;
+}
+
+.left h1, .right h1{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+/* making the hurray page */
+
+.hurray{
+    margin-top: 10rem;
+    text-align: center;
+}
+
+.hurray h1{
+    margin-top: 6rem;
+    font-size: 6rem;
+    letter-spacing: 10px;
+    line-height: 5px;
+}
+
+.hurray h2{
+    font-size: 3rem;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.hurray .btn{
+    width: 10rem;
+    margin: 8rem auto;
+}
+
+.select-none{
+  user-select: none;
+}
